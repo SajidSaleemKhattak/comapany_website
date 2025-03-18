@@ -144,3 +144,22 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 460px) {
+  .heroTitle {
+    font-size: 1.4rem;
+  }
+
+  .formTitle,
+  .ctaTitle {
+    font-size: 1.4rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+    max-width: 75vw;
+  }
+
+  .quoteForm {
+    gap: 1rem;
+  }
+}

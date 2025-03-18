@@ -14,58 +14,64 @@ const Become_a_Partner = () => {
         </h1>
         <img src={people_working} className={styles.people_working} alt="" />
 
-        <h2 className={styles.titles}>Why Partner With Us?</h2>
-        <ul>
-          <li>
-            <strong>Revenue Growth:</strong> Increase your earnings through our
-            partnership programs.
-          </li>
-          <li>
-            <strong>Exclusive Resources:</strong> Gain access to premium tools
-            and dedicated support.
-          </li>
-          <li>
-            <strong>Co-Branding Opportunities:</strong> Build credibility with a
-            trusted software company.
-          </li>
-          <li>
-            <strong>End-to-End Support:</strong> From onboarding to client
-            servicing, we've got you covered.
-          </li>
-        </ul>
+        <div className={styles.listContainer}>
+          <h2 className={styles.titles}>Why Partner With Us?</h2>
+          <ul className={styles.uls2}>
+            <li>
+              <strong>Revenue Growth:</strong> Increase your earnings through
+              our partnership programs.
+            </li>
+            <li>
+              <strong>Exclusive Resources:</strong> Gain access to premium tools
+              and dedicated support.
+            </li>
+            <li>
+              <strong>Co-Branding Opportunities:</strong> Build credibility with
+              a trusted software company.
+            </li>
+            <li>
+              <strong>End-to-End Support:</strong> From onboarding to client
+              servicing, we've got you covered.
+            </li>
+          </ul>
+        </div>
 
-        <h2 className={styles.titles}>Who Can Partner?</h2>
-        <ul>
-          <li>
-            <strong>Freelancers & Consultants:</strong> Expand your service
-            offerings.
-          </li>
-          <li>
-            <strong>Marketing & IT Agencies:</strong> Add top-tier software
-            solutions to your portfolio.
-          </li>
-          <li>
-            <strong>Resellers & Distributors:</strong> Sell our services under
-            your brand or co-brand with us.
-          </li>
-        </ul>
+        <div className={styles.listContainer}>
+          <h2 className={styles.titles}>Who Can Partner?</h2>
+          <ul className={styles.uls2}>
+            <li>
+              <strong>Freelancers & Consultants:</strong> Expand your service
+              offerings.
+            </li>
+            <li>
+              <strong>Marketing & IT Agencies:</strong> Add top-tier software
+              solutions to your portfolio.
+            </li>
+            <li>
+              <strong>Resellers & Distributors:</strong> Sell our services under
+              your brand or co-brand with us.
+            </li>
+          </ul>
+        </div>
 
-        <h2 className={styles.titles}>How It Works?</h2>
-        <ol>
-          <li>
-            <strong>Apply Online:</strong> Fill out our quick partnership form.
-          </li>
-          <li>
-            <strong>Get Approved:</strong> We evaluate your profile and discuss
-            collaboration terms.
-          </li>
-          <li>
-            <strong>Start Earning:</strong> Refer, resell, or collaborate with
-            us on projects.
-          </li>
-        </ol>
-
-        <p>
+        <div className={styles.listContainer}>
+          <h2 className={styles.titles}>How It Works?</h2>
+          <ol className={styles.uls2}>
+            <li>
+              <strong>Apply Online:</strong> Fill out our quick partnership
+              form.
+            </li>
+            <li>
+              <strong>Get Approved:</strong> We evaluate your profile and
+              discuss collaboration terms.
+            </li>
+            <li>
+              <strong>Start Earning:</strong> Refer, resell, or collaborate with
+              us on projects.
+            </li>
+          </ol>
+        </div>
+        <p className={styles.strong}>
           <strong>Join Us Today!</strong> Let’s build something great together.
         </p>
         <Link to="/Contact_us" className={styles.btn}>

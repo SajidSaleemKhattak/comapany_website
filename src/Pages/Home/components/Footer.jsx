@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className={Styling.containers}>
           <h3>Categories</h3>
-          <ul>
+          <ul className={Styling.uls}>
             <li>Software Development</li>
             <li>Web Design</li>
             <li>Mobile App Development</li>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className={Styling.containers}>
           <h3>I need solutions</h3>
-          <ul>
+          <ul className={Styling.uls}>
             <li>Web Application Design</li>
             <li>E-Commerce Solutions</li>
             <li>Digital Marketing</li>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className={Styling.containers}>Our Company</h3>
-          <ul>
+          <ul className={Styling.uls}>
             <li>About Us</li>
             <li>Our Approach</li>
             <li>Contact Us</li>

@@ -1,5 +1,5 @@
 .AfterHeroParent {
-  padding: 10% 17%;
+  padding: 10% 10%;
 }
 
 .servicesMain {
@@ -7,7 +7,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 4rem;
 }
 
 .servicesEachOne {
@@ -16,105 +17,97 @@
   border-radius: 3px;
   border: 1px solid gray;
   width: 12vw;
-  height: 19vh;
-  padding-top: 7vh;
+  height: 20vh;
+  padding: 2vh;
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
-  width: 2.1rem;
-  height: 2.1rem;
-  margin: 0% auto;
-  margin-bottom: 17px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 15px;
   color: #004ffe;
 }
 
 .servicesTagline {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
 }
+
 .seeAllServiceParent {
   margin: 4% auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
+
 .generalTagline1 {
   text-align: center;
   text-decoration: underline;
-  font-size: 12px;
-  border-bottom-width: 10%;
+  font-size: 14px;
 }
 
 .arrowTag {
-  width: 22px;
-  height: 22px;
-  border-bottom: 1ps solid grey;
-  border-radius: 25px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   background-color: #004ffe;
   color: #ffdb3f;
   font-weight: bold;
 }
 
 .secondTagline {
-  margin: 0% auto;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #004ffe;
   font-weight: bold;
-  align-items: center;
   text-align: center;
-  align-self: center;
-  justify-content: center;
-  margin-top: 0%;
   margin-bottom: 5%;
 }
 
 .taglineDrift {
-  margin: 0% auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .additionalObjectParent {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10rem;
 }
+
 .additionalObjectEachOne {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  padding: 0.6rem;
+  padding: 1rem;
   justify-content: center;
-  width: 14vw;
-  height: 37vh;
-  margin-bottom: 12vh;
+  width: 16vw;
+  height: 40vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+}
+
+.additionalObjectTagline1,
+.additionalObjectTagline2 {
+  text-align: center;
+  margin-top: 5px;
 }
 
 .additionalObjectTagline1 {
-  text-align: center;
   font-weight: bold;
-  margin-top: 2px;
 }
 
 .additionalObjectTagline2 {
-  text-align: center;
-  font-size: 0.8rem;
-  margin-top: 2px;
-}
-
-.additionalObjectIconDIV {
-  width: 3.1rem;
-  height: 3.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0% auto;
+  font-size: 0.7rem;
 }
 .icons2 {
   width: 3.1rem;
@@ -126,16 +119,15 @@
 .SecondBigTagline {
   color: #004ffe;
   font-weight: bold;
-  font-size: 2rem;
-  margin: 0% auto;
+  font-size: 2.2rem;
   margin-bottom: 7%;
 }
 
 .parentHow {
   display: flex;
   width: 100%;
-  height: 70vh;
-  align-items: stretch;
+  height: 100vh;
+  align-items: top;
   /* padding: 20px 0px; */
   /* background-color: #ffdb3f; */
   gap: 3vw;
@@ -186,12 +178,15 @@
   font-weight: bold;
   color: #004ffe;
   margin-bottom: 3px;
+  text-align: left;
 }
 .howDivsParent {
   width: 50%;
   width: 50%;
   min-width: 50%;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .howDivs {
   margin-right: 0%;
@@ -201,6 +196,7 @@
 .minorTag {
   margin-bottom: 4px;
   line-height: 0.8rem;
+  text-align: left;
 }
 .placeOrderParent {
   display: flex;
@@ -238,4 +234,249 @@
 .contactUsBTN:hover {
   background-color: #2a6dff;
   color: white;
+}
+@media (max-width: 1024px) {
+  .servicesEachOne,
+  .additionalObjectEachOne {
+    width: 30vw;
+    height: auto;
+  }
+  .howDivsParent {
+    text-align: center;
+  }
+  .howImages {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .AfterHeroParent {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .additionalObjectParent {
+    gap: 6rem;
+  }
+
+  .parentHow {
+    max-width: 90%;
+  }
+  .secondTagline {
+    font-size: 1.6rem;
+    max-width: 80%;
+    padding: 10% 0;
+  }
+  .additionalObjectEachOne {
+    width: 60vw;
+    height: auto;
+  }
+
+  .servicesEachOne {
+    width: 50vw;
+    height: auto;
+  }
+  .minorTag {
+    max-width: 40vw;
+  }
+  .howTaglines {
+    max-width: 40vw;
+  }
+  .howContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .howImages {
+    width: 100%;
+  }
+  .howDivs {
+    max-width: 90%;
+  }
+
+  .howDivsParent {
+    max-width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 537px) {
+  .howDivsParent {
+    text-align: center;
+  }
+  .howImages {
+    height: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .howImages {
+    height: 35rem;
+  }
+  .howDivsParent {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+
+    height: 44rem;
+  }
+  .howTaglines {
+    font-size: 1rem;
+  }
+  .minorTag {
+    font-size: 0.7rem;
+  }
+  .parentHow {
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .howImages {
+    height: 40rem;
+  }
+  .howDivsParent {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .howTaglines {
+    font-size: 1rem;
+  }
+  .minorTag {
+    font-size: 0.7rem;
+  }
+  .parentHow {
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .howImages {
+    height: 36rem;
+  }
+}
+
+@media (max-width: 354px) {
+  .howImages {
+    height: 41rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .howImages {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 356px) {
+  .howImages {
+    height: 39rem;
+  }
+}
+
+@media (max-width: 352px) {
+  .howImages {
+    height: 41rem;
+  }
+}
+
+@media (max-width: 304px) {
+  .howImages {
+    height: 46rem;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 429px) {
+  .howImages {
+    height: 40rem !important;
+  }
+}
+@media (min-width: 400px) and (max-width: 414px) {
+  .howImages {
+    height: 35rem !important;
+  }
+}
+@media (min-width: 423px) and (max-width: 479px) {
+  .howImages {
+    height: 38rem !important;
+  }
+}
+@media (min-width: 491px) and (max-width: 493px) {
+  .howImages {
+    height: 34rem !important;
+  }
+}
+@media (min-width: 493px) and (max-width: 519px) {
+  .howImages {
+    height: 33.5rem !important;
+  }
+}
+
+@media (min-width: 519px) and (max-width: 560px) {
+  .howImages {
+    height: 30.5rem !important;
+  }
+}
+@media (min-width: 561px) and (max-width: 573px) {
+  .howImages {
+    height: 30.5rem !important;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 422px) {
+  .howImages {
+    height: 40rem !important;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 572px) {
+  .howImages {
+    height: 36rem;
+  }
+  .parentHow {
+    margin-bottom: 15rem;
+  }
+}
+
+@media (min-width: 584px) and (max-width: 586px) {
+  .howImages {
+    height: 28.5rem;
+  }
+}
+@media (min-width: 588px) and (max-width: 678px) {
+  .howImages {
+    height: 27.5rem;
+  }
+}
+
+@media (min-width: 679px) and (max-width: 875px) {
+  .howImages {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 875px) and (max-width: 959px) {
+  .howImages {
+    height: 24rem;
+  }
+}
+
+@media (min-width: 959px) and (max-width: 1160px) {
+  .howImages {
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1161px) and (max-width: 1866px) {
+  .howImages {
+    height: 21rem;
+  }
 }

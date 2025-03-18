@@ -1,25 +1,134 @@
+/* Main Header */
 .header {
   background-color: #f1f1f1;
   justify-content: space-between;
   height: 12vh;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
+  position: relative;
+  z-index: 1000;
+}
+.logo {
+  width: 5%;
+  height: 5%;
+  border-radius: 4px;
+  background-color: #5f2323;
+  background-color: black !important;
 }
 
-.navigation {
-  list-style: none;
+.clogo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  height: 100%;
+  padding-top: 0.3rem;
 }
+@media screen and (max-width: 320px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Logo */
 .logo {
   width: 25%;
   height: 25%;
   border-radius: 4px;
   background-color: #5f2323;
+}
+
+/* Desktop Navigation */
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+
+/* Hide "Get a Quote" inside the sidebar by default */
+.mobileQuote {
+  display: none;
+}
+
+/* "Get a Quote" button for larger screens */
+.desktopQuote {
+  display: block;
+  width: 14rem;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Mobile Navigation (Sidebar) */
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden */
+    width: 70%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Show Sidebar when menu is open */
+  .showMenu {
+    left: 0;
+  }
+
+  /* Navigation Links in Sidebar */
+  .navigation a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* Show "Get a Quote" button inside sidebar on mobile */
+  .mobileQuote {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Hide "Get a Quote" button from the main header on mobile */
+  .desktopQuote {
+    display: none;
+  }
+}
+
+/* Menu Button (Hamburger Icon) */
+.menuIcon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block; /* Show only on mobile */
+  }
+}
+
+.header a {
+  text-decoration: none;
+  color: #5f2323;
+}
+.header a:hover {
+  color: #004ffe;
+}
+.header a:active {
+  color: rgb(156, 38, 38);
+}
+.isActive {
+  color: #1b0ea1;
+  font-weight: bold;
+  border-bottom: 2px solid #1b0ea1;
 }
 .btn {
   background-color: #004ffe;
@@ -27,15 +136,4 @@
   border-style: none;
   color: #f1f1f1;
   border-radius: 4px;
-}
-
-.isActive {
-  color: #1b0ea1;
-  font-weight: bold;
-  border-bottom: 2px solid #1b0ea1;
-}
-
-.header a {
-  text-decoration: none;
-  /* color: inherit; */
 }

@@ -1,19 +1,122 @@
 .ChatParent {
   width: 25%;
-  height: 28%;
+  height: 30%;
   background-color: whitesmoke;
   position: fixed;
-  right: 2.3rem;
-  bottom: 6.5rem;
+  right: 0.3rem;
+  bottom: 5.3rem;
   border-radius: 5px;
+  border: 0.1px solid black;
   padding: 20px 25px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 460px) {
+  .ChatParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30% !important;
+    height: 20% !important;
+    position: fixed;
+    right: 2.3rem;
+    bottom: 4.8rem !important;
+    border-radius: 5px;
+    padding: 20px 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .profilePic {
+    border-radius: 233px;
+    width: 32px !important;
+    object-fit: cover;
+    height: 32px !important;
+  }
+  .picAndName {
+    display: flex;
+    gap: 10px;
+    font-size: 0.2rem !important;
+    align-items: center;
+    margin-bottom: 0px !important;
+  }
+  .picAndName p {
+    display: flex;
+    gap: 10px;
+    font-size: 0.6rem !important;
+    align-items: center;
+  }
+
+  .question {
+    font-size: 0.5rem !important;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .input {
+    padding: 3px 4px !important;
+    width: 90% !important;
+  }
+  .input::placeholder {
+    font-size: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ChatParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    position: fixed;
+    right: 0.3rem;
+    bottom: 5.1rem;
+    border-radius: 5px;
+    padding: 20px 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .profilePic {
+    border-radius: 233px;
+    width: 32px !important;
+    object-fit: cover;
+    height: 32px !important;
+  }
+  .picAndName {
+    display: flex;
+    gap: 10px;
+    font-size: 0.2rem !important;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .picAndName p {
+    display: flex;
+    gap: 10px;
+    font-size: 0.6rem !important;
+    align-items: center;
+  }
+
+  .question {
+    font-size: 0.5rem !important;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .input {
+    padding: 3px 4px !important;
+    width: 90% !important;
+  }
+  .input::placeholder {
+    font-size: 0.5rem !important;
+  }
+}
+
 .profilePic {
   border-radius: 233px;
-  width: 62px;
+  width: 50px;
   object-fit: cover;
-  height: 62px;
+  height: 50px;
 }
 .picAndName {
   display: flex;
@@ -22,11 +125,36 @@
 }
 
 .question {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  margin-top: 1rem;
   margin-bottom: 10px;
   color: black;
 }
 
 .input {
   padding: 4px 5px;
+}
+
+@media (min-width: 970px) and (max-width: 1240px) {
+  .ChatParent {
+    right: 0.3rem;
+    bottom: 5.8rem !important;
+    width: 20%;
+    height: 30%;
+  }
+}
+@media (max-width: 357px) {
+  .ChatParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30% !important;
+    height: 25% !important;
+    position: fixed;
+    right: 0.3rem;
+    bottom: 4.8rem !important;
+    border-radius: 5px;
+    padding: 20px 25px;
+  }
 }

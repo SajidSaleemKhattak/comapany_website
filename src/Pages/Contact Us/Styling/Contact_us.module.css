@@ -170,6 +170,7 @@
 @media (max-width: 600px) {
   .contactInfo {
     grid-template-columns: 1fr;
+    max-width: 72vw;
   }
 
   .contactHeader h1 {
@@ -178,5 +179,12 @@
 
   .contactHeader p {
     font-size: 14px;
+  }
+  .formGroup input {
+    max-width: 60vw;
+    max-height: 3vh;
+  }
+  .textarea {
+    max-width: 60vw;
   }
 }

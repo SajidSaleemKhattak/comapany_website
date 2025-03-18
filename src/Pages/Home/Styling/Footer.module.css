@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 7% 6%;
 }
+
 .containers {
   width: 35%;
 }
@@ -55,4 +56,125 @@
 .containersIcons {
   display: flex;
   flex-direction: column;
+  margin-top: 5.5%;
+  margin-left: 0%;
+  gap: 3%;
+  width: 1.8rem;
+}
+
+@media (max-width: 460px) {
+  .FooterParent {
+    background-color: rgb(218, 212, 212);
+    max-width: 100vw;
+  }
+
+  .containers {
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+  }
+
+  .PrimaryFotterStyling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .FooterParent li {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FooterParent h3 {
+    color: #004ffe;
+    margin-bottom: 5px; /* Reduce space between title and list */
+  }
+
+  .FooterParent ul {
+    list-style: none;
+    padding-left: 0%;
+    margin-top: 0px; /* Remove unwanted top margin */
+  }
+}
+
+@media (min-width: 461px) and (max-width: 768px) {
+  .FooterParent {
+    background-color: rgb(218, 212, 212);
+    max-width: 100vw;
+  }
+
+  .containers {
+    width: 100vw !important;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+  }
+  .containers h3 {
+    font-size: 1.5rem;
+  }
+  .containers p {
+    font-size: 1rem;
+  }
+
+  .PrimaryFotterStyling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .FooterParent li {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FooterParent h3 {
+    color: #004ffe;
+    margin-bottom: 5px; /* Reduce space between title and list */
+  }
+
+  .FooterParent ul {
+    list-style: none;
+    padding-left: 0%;
+    margin-top: 0px; /* Remove unwanted top margin */
+  }
+  .uls li {
+    font-size: 1rem;
+    padding-top: 4%;
+  }
+  .SocialICONS {
+    width: 2.2rem;
+    height: 2.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .containersIcons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+  }
+}
+
+@media (max-width: 769px) {
+  .containersIcons {
+    display: flex;
+    flex-direction: row;
+    width: 8rem;
+    gap: 1rem;
+    margin: auto;
+    /* background-color: black; */
+  }
+
+  .SocialICONS {
+    width: 8rem !important;
+    height: 8rem !important;
+    margin-bottom: 0.7rem;
+    /* gap: 1rem; */
+  }
 }
