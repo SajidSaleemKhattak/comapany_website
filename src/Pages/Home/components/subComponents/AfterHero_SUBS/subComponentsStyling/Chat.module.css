@@ -1,6 +1,6 @@
 .ChatParent {
   width: 25%;
-  height: 28%;
+  height: 42%;
   background-color: whitesmoke;
   position: fixed;
   right: 2.3rem;
@@ -8,6 +8,7 @@
   border-radius: 5px;
   padding: 20px 25px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
 }
 .profilePic {
   border-radius: 233px;
@@ -29,4 +30,9 @@
 
 .input {
   padding: 4px 5px;
+}
+.sendIcon {
+  margin-left: 25px;
+  height: 20px;
+  width: 20px;
 }
